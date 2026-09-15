@@ -24,7 +24,12 @@ Expected time: 1-2 min
 
 For optimization, it will typically take more than 30 min, depending on how many cycles the optimization runs.
 
-
+## Run uncertainty analyses
+To evaluate how moisture uncertainty impacts heterotrophic respiration (Rh), overwrite the contents of MEND_namelist.nml with MEND_namelistSWCuq.nml. Next, execute the following command:
+```
+python pipeline_mc_SWC.py "some log information here"
+```
+This script uses the Monte Carlo (MC) samples of soil moisture uncertainty to quantify uncertainty across all experimental treatments under varying moisture conditions.
 
 
 
